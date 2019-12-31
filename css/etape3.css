@@ -1,0 +1,39 @@
+body {
+    background-color: #ddeeaa;
+    margin: 10px 0;
+    padding: 0;
+    /* text-align center a cause d'internet explorer (les anciennes versions d'IE */
+    text-align: center;
+    font: 0.8em;
+    font-size: 0.8em;
+    font-family: "trebuchet ms", "Helvetica", sans-serif;
+}
+
+#conteneur {
+    /* margin 0 et euto pour centrer le conteneur dans la page ATTENTION à donner une largeur (cest une marge automatique)*/
+    /* text-align: center; */
+    /* padding: 3em 3em; */
+    margin: 0 auto;
+    width: 770px;
+    /* height: 100em; */
+    background-color: #fff;
+    border: 2px solid #ab4;
+    text-align: left;
+}
+
+header h1 {
+    /* hauteur du h1 dans le header */
+    height: 258px;
+    background: url(../img/apple.jpg) no-repeat left bottom;
+    /* background-image: url(../img/apple.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;*/
+} 
+
+main h2 {
+    padding-left: 25px;
+    font-size: 1.4em;
+    color: #9b2;
+    background: url(../img/little_apple.gif) no-repeat left bottom;
+    border-bottom: 1px solid #9b2;
+}
