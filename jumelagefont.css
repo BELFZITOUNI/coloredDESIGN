@@ -1,0 +1,147 @@
+body {
+    background-color: #ddeeaa;
+    margin: 10px 0;
+    padding: 0;
+
+    /* text-align center a cause d'internet explorer (les anciennes versions d'IE */
+    text-align: center;
+    font: 0.8em;   
+
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Gelasio', serif;
+}
+
+#conteneur {
+    /* margin 0 et euto pour centrer le conteneur dans la page ATTENTION à donner une largeur (cest une marge automatique)*/
+    /* text-align: center; */
+    /* padding: 3em 3em; */
+    margin: 0 auto;
+    width: 770px;
+    /* height: 100em; */
+    background-color: #fff;
+    border: 2px solid #ab4;
+
+    text-align: left;
+}
+
+header h1 {
+    /* hauteur du h1 dans le header qui permet de mettre une oimage en fond, la taille édicter par la taille de l'image  */
+    height: 258px;
+    background: url(../img/apple.jpg) no-repeat left top;
+    /* background-image: url(../img/apple.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;*/
+} 
+
+header h1 a {
+    /* On donne des dimensions au lien chose possible grace à la propriété display block qui transforme le lien en élément de type block auquelle ont peut donner des propriétés de taille on met aussi l'image de fond qui à les meme diumension que le cadre ainsi créé */
+    width: 400px;
+    height: 70px;
+    display: block;
+    /* dès l'instant qu'on change d'inline en block il est préfeérable des tailles de largeur et/ou hauteur a l'élément  */
+    background: url(../img/title.gif);
+    
+    left: 350px;
+    top: 15px;
+    position: relative;
+
+    /* Pour masquer le texte en dehors de la page */
+    text-indent: -5000px;
+}
+
+main {
+    /* padding pour main afin de caler les contenus dans main et de laisser la place à l'image en arrière plan  */
+    /* width: 400px; */
+    padding: 0 30px 0 100px;
+    background: url(../img/bg_page.gif) no-repeat left top;
+    /* on crée un espacea gauche et à droite de l'image  */
+    background-position: 15px 15px ;
+}
+
+main a {
+    color: #8a0;  
+}
+
+main p {
+    line-height: 1.7em;
+    text-align: justify;
+}
+main h2 {
+    padding-left: 25px;
+    border-bottom: 1px solid #9b2;
+    background: url(../img/little_apple.gif) no-repeat left bottom;
+
+    font-size: 1.4em;
+    color: #9b2;  
+    line-height: 25px;
+    font-family: 'Stoke', serif;
+}
+
+main h3 {
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #9b2;
+    border-left: 3px solid #9b2;
+    color: #9b2;
+    font-family: 'Stoke', serif;
+}
+
+main a:hover {
+    color:red;
+}
+
+/* main a:visited {
+    color: #aabb44;
+} */
+
+footer p {
+    margin: 0;
+    padding-right: 30px;
+    color: #8a0;
+    line-height: 30px;
+    text-align: right;
+}
+
+ul#menu {
+    height: 35px;
+    margin: 0;
+    padding: 0;  
+    /* on met une umage de fond avec un décalage de 25 px vers le haut    */
+    background: url(../img/bg_menu.gif) repeat-x 0 -25px;
+
+    /* on cache les puces    */
+    list-style-type: none;
+    /* display: inline; */
+}
+
+ul#menu li {
+    /* on rend les li flottant pour les afficher horizontalement  */
+    float: left;
+    text-align: center;    
+    /* background: red; */
+    /* display: inline; */
+}
+
+ul#menu li a{
+    width: 130px;
+    /* text-align: center; */
+    /* float: left; */
+    /* background: red; */
+    /* grace à la propriété display:block, on peut dimensionner les a  */
+    display: block;
+    border-right: 2px solid #dea;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+ul#menu li a:hover{
+    /* on décale l'image de fond au passage de la souris, ou au survol de lasouris, ce qui fait une animation  */
+    background: url(../img/bg_menu.gif) repeat-x 0 0;
+}
+

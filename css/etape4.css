@@ -32,6 +32,21 @@ header h1 {
     background-position: left bottom;*/
 } 
 
+header h1 a {
+    /* L'image en arrière plan du h1 */
+    width: 400px;
+    height: 70px;
+    display: block;
+    /* dès l'instant qu'on change d'inline en block il est préfeérable des tailles de largeur et/ou hauteur a l'élément  */
+    background: url(../img/title.gif);
+    
+    left: 350px;
+    top: 15px;
+    position: relative;
+
+    /* Pour masquer le texte  */
+    text-indent: -5000px;    
+}
 main {
     /* padding pour main afin de caler les contenus dans main et de laisser la place à l'image en arrière plan  */
     /* width: 400px; */
@@ -39,12 +54,21 @@ main {
     background: url(../img/bg_page.gif) no-repeat left top;
 }
 
+main a {
+    color: #8a0;    
+}
+
+main p {
+    line-height: 1.7em;
+    text-align: justify;
+}
 main h2 {
     padding-left: 25px;
-    font-size: 1.4em;
-    color: #9b2;
-    background: url(../img/little_apple.gif) no-repeat left bottom;
     border-bottom: 1px solid #9b2;
+    background: url(../img/little_apple.gif) no-repeat left bottom;
+
+    font-size: 1.4em;
+    color: #9b2;  
     line-height: 25px;
 }
 
@@ -54,15 +78,6 @@ main h3 {
     border-bottom: 1px solid #9b2;
     border-left: 3px solid #9b2;
     color: #9b2
-}
-
-main p {
-    line-height: 1.7em;
-    text-align: justify;
-}
-
-main a {
-    color: #8a0;    
 }
 
 main a:hover {
@@ -80,3 +95,42 @@ footer p {
     line-height: 30px;
     text-align: right;
 }
+
+
+
+ul#menu {
+    height: 35px;
+    margin: 0;
+    padding: 0;    
+    background: url(../img/bg_menu.gif) repeat-x 0 -25px;
+
+    list-style-type: none;
+    /* display: inline; */
+}
+
+ul#menu li {
+    float: left;
+    text-align: center;    
+    /* background: red; */
+    /* display: inline; */
+}
+
+ul#menu li a{
+    width: 130px;
+    /* text-align: center; */
+    /* float: left; */
+    /* background: red; */
+    display: block;
+    border-right: 2px solid #dea;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+ul#menu li a:hover{
+    background: url(../img/bg_menu.gif) repeat-x 0 0;
+}
+
